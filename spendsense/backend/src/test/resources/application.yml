@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: test
+  datasource:
+    url: jdbc:sqlite:./data/test-expenses.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+spendsense:
+  cors:
+    allowed-origins: http://localhost:5173
+  jwt:
+    secret: spendsense-test-secret-key-at-least-32-characters-long
+    expiration-ms: 3600000
+
+logging:
+  level:
+    com.spendsense: WARN

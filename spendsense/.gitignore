@@ -1,0 +1,26 @@
+# Backend
+backend/data/
+backend/data/expenses.db
+backend/data/test-expenses.db
+backend/data/test-expenses.db-*
+backend/target/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log

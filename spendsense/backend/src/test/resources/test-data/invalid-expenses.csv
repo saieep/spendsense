@@ -1,0 +1,7 @@
+date,amount,description,category,note
+2026-06-10,25.50,Valid lunch,Food,
+bad-date,10.00,Bad date row,Food,
+2026-06-11,-5.00,Negative amount,Food,
+2026-06-12,0,Zero amount,Food,
+2026-06-13,15.00,Unknown category,NonExistent,
+2026-06-14,8.00,Another valid,Food,

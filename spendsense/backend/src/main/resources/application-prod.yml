@@ -1,0 +1,13 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+spendsense:
+  cors:
+    allowed-origins: ${SPENDSENSE_CORS_ALLOWED_ORIGINS:https://spendsense.vercel.app}
+  gemini:
+    enabled: true
+    dev-mode: false
+    daily-request-limit: 1500
+    min-request-interval-ms: 0

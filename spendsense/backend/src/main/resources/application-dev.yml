@@ -1,0 +1,17 @@
+# Dev profile: enables Gemini with caps below Google AI Studio free tier
+# (~15 req/min, ~1500 req/day for gemini-2.5-flash).
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+spendsense:
+  gemini:
+    enabled: true
+    dev-mode: true
+    daily-request-limit: 100
+    min-request-interval-ms: 4000
+
+logging:
+  level:
+    com.spendsense.service.GeminiAiService: INFO
